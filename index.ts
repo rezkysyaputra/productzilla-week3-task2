@@ -83,7 +83,7 @@ console.log(kurangiKesehatan(prajurit, 10));
 
 // Rangkuman Misi Arion
 const rangkumanMisiArion = (): string => {
-  return `Seorang Pahlawan bernama ${namaPahlawan} telah menyelesaikan misi petualangannya, dengan itu dia mendapatkan ${kepingEmas} kerajaan. Selain itu, ${namaPahlawan} juga mendapatkan poin pengalaman sebanyak ${pengalamanBertarung} XP selama bertarung.`;
+  return `Seorang Pahlawan bernama ${namaPahlawan} telah menyelesaikan misi petualangannya, dengan itu dia mendapatkan ${kepingEmas} keping emas kerajaan. Selain itu, ${namaPahlawan} juga mendapatkan poin pengalaman sebanyak ${pengalamanBertarung} XP selama bertarung.`;
 };
 
 console.log(rangkumanMisiArion());
