@@ -1,61 +1,89 @@
-// const new = (a: number, b: number): number => {
-//     // let
-// // bisa dirubah
-// let nameA: string = "krisna"
+// TUGAS 1
+console.info('TUGAS 1');
 
-// // const
-// // tidak dirubah
-// const nameK: string = "krisna"
+// 25 nama variabel
+const namaPanjang: string = 'Rezky Syaputra';
+let namaPanggilan: string = 'Rezky';
+var umurSaya: number = 20;
+const jeniskelamin: string = 'Laki-laki';
+const agama: string = 'Islam';
+const menikah: boolean = false;
+const hobi: string = 'Bengong';
+const alamat: string = 'Amerika serikart';
+const nomorTelepon: number = 123456789;
+const beratBadan: number = 50.6;
+const tinggiBadan: number = 170;
+const warnaKulit: string = 'Hijau';
+const tempatTinggal: string = 'Amsterdam';
+const ukuranBaju: number = 42;
+const ukuranCelana: number = 36;
+const ukuranSepatu: number = 42;
+const ukuranKacamata: number = 42;
+const warnaFavorit: string = 'Pink';
+const statusNganggur: boolean = true;
+const tabungan: null = null;
+const saudaraKandung: undefined = undefined;
+const pendapatan: number = 0;
+const punyaPeliharaan: boolean = true;
+const peliharaan: string = 'Kucing';
+const kaki: number = 4;
+const warnaPeliharaan: string = 'Putih';
 
-// // var 
-// // type lama sama kayak let
-// var nameL: string = "krisna"
+// Method / function
+const penjumlahan = (a: number, b: number): number => a + b;
+console.log('Hasil Penjumlahan 20 + 5 =' + penjumlahan(20, 5));
 
-// // string
-// let nameS: string = "krisna"
+const pengurangan = (a: number, b: number, c: number): number => a - b - c;
+console.log('Hasil Pengurangan 20 - 5 - 5 =' + pengurangan(20, 5, 5));
 
-// // boolean
-// let isActive: boolean = true
+const perkalian = (a: number, b: number, c: number): number => a * b * c;
+console.log('Hasil Perkalian 20 * 5 * 2 = ' + perkalian(20, 5, 2));
 
-// // number / integer
-// let total: number = 10
+const pembagian = (a: number, b: number): number => a / b;
+console.log('Hasil Pembagian 20 / 5 = ' + pembagian(20, 5));
 
-// // float
-// // nan
-// let totalNan: null = null
+// TUGAS 2
+console.info('TUGAS 2');
 
-// console.log(nameA)
+// Karakter Utama
+const namaPahlawan: string = 'Arion';
+const umur: number = 30;
+const statusBertarung: boolean = true;
 
-// }
+// Sumber daya Kerajaan
+let kepingEmas: number = 5000;
+const persediaanMakanan: number = 120;
+let prajurit: number = 200;
 
-// interface IName {
-//     name: string
-//     age: number
-// }
+// Petualangan Pahlawan
+kepingEmas = kepingEmas + 1500;
+let pengalamanBertarung: number = 75;
 
-// // union type
-// let value: string | number
-// value = 1
-// value = "krisna"
+// Misi Penyembuhan
+let kesehatan: number = 100;
+const kurangiKesehatan = (
+  jumlahPrajurit: number,
+  poinKesehatanHilang: number
+): string => {
+  kesehatan = kesehatan - poinKesehatanHilang;
 
-// // type alias 
-// type StringOrNumber = string | number
+  if (kesehatan <= 0) {
+    prajurit = jumlahPrajurit - 1;
+    kesehatan = 100;
 
-// let result: StringOrNumber = "krisna"
-// result = 1
-// result = "andi"
+    return 'prajurit mati, prajurit tersisa: ' + prajurit;
+  } else {
+    return 'kesehatan prajurit tersisa: ' + kesehatan;
+  }
+};
 
-// let find: any = true
-// find = "krisna"
-// find = 1 
+console.log(kurangiKesehatan(prajurit, 10));
+console.log(kurangiKesehatan(prajurit, 100));
+console.log(kurangiKesehatan(prajurit, 10));
 
-let namel: string = "krisna"
-console.log(namel)
+// Rangkuman Misi Arion
+const rangkumanMisiArion = (): string => {
+  return `Seorang Pahlawan bernama ${namaPahlawan} telah menyelesaikan misi petualangannya, dengan itu dia mendapatkan ${kepingEmas} kerajaan. Selain itu, ${namaPahlawan} juga mendapatkan poin pengalaman sebanyak ${pengalamanBertarung} XP selama bertarung.`;
+};
 
-const data: boolean = true
-console.log(data)
-
-function add(a: number, b:number): number {
-    return a + b
-}
-console.log(add(1,2))
+console.log(rangkumanMisiArion());
